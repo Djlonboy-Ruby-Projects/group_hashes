@@ -8,6 +8,41 @@ players = [
   { :name => "Ed", :sport => "tennis" },
   { :name => "Mark", :sport => "football" }
   ]
+# Check the original array
+puts players.inspect
+
+# Create a new array
+sports_players = {}
+
+# For each hash in players
+players.each do |players|
+  # If the sport doesn't exist yet, create it and add the first player
+  if sports_players[players[:sport].to_sym] == nil
+    sports_players[players[:sport].to_sym] = [players[:name]]
+  # If the sport already exists, push the next player into the array
+  else
+    sports_players[players[:sport].to_sym].push(players[:name])
+  end
+end
+
+# Check the new hash
+puts sports_players.inspect
+
+
+
+
+
+
+
+
+
+
+
+
+
+exit
+
+
 
 # create new array
 sports_players = []
