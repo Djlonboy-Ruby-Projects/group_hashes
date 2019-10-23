@@ -27,30 +27,3 @@ end
 
 # Check the new hash
 puts sports_players.inspect
-
-
-
-
-
-
-
-
-
-
-
-
-
-exit
-
-
-
-# create new array
-sports_players = []
-
-# loop over the items in players and enter them into the new array
-players.each do |entry|
-  sports_players.push(entry[:sport].to_sym => entry[:name])
-end
-
-# Print the new array to the screen
-puts sports_players.inspect
